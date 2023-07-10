@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>CRM </title>
+
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <aside>
+                 <picture class="logo">
+                        <source media="(min-width: 769px)" srcset="img/logo.png">
+                        <source media="(max-width: 768px)" srcset="img/logo-movil.png">
+                        <img src="img/logo.png" alt="logo">
+                    </picture>
+              
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><img src="img/ico1.png"><span>Panel</span> </a> </li>
+                                                                 
+                        <li><a href="index.html"><img src="img/ico3.png"> <span>Clientes</span></a></li>
+                        <li><a href="nuevo-cliente.html"><img src="img/ico7.png"><span>Nuevo Cliente</span> </a></li>                   
+                    </ul>
+            </nav>
+            </aside>
+            <main>
+                <div class="wrapper_inner">
+                    <h2>Hola  Pam 👋🏼</h2>
+                    <div class="box">
+                        <h3>Editar Cliente</h3>
+                        <form id="formulario" class="form">
+                            <div>
+                                <label  for="nombre">Nombre</label>
+                                <input 
+                                   
+                                    id="nombre"
+                                    name="nombre"
+                                    type="text"
+                                    placeholder="Nombre Cliente"
+                                />
+                            </div>
+                            <div>
+                                <label for="email">Correo</label>
+                                <input 
+                                    id="email"
+                                    name="email"
+                                    type="email"
+                                    placeholder="Email Cliente"
+                                />
+                            </div>
+
+                            <div class="mb-4">
+                                <label  for="telefono">Teléfono</label>
+                                <input                                    
+                                    id="telefono"
+                                    name="telefono"
+                                    type="tel"
+                                    placeholder="Teléfono Cliente"
+                                />
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="empresa">Empresa</label>
+                                <input 
+                                    id="empresa"
+                                    name="empresa"
+                                    type="text"
+                                    placeholder="Empresa Cliente"
+                                />
+                            </div>
+
+                            <input type="hidden" name="id" id="id" value="">
+
+
+                            <input
+                                type="submit"
+                             value="Actualizar  Cliente"
+                            />
+                        </form>
+                    </main>
+                </div>
+               
+    <script src="js/editarcliente.js"></script>
+</body>
+</html>

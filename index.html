@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>CRM </title>
+
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <aside>
+                 <picture class="logo">
+                        <source media="(min-width: 769px)" srcset="img/logo.png">
+                        <source media="(max-width: 768px)" srcset="img/logo-movil.png">
+                        <img src="img/logo.png" alt="logo">
+                    </picture>
+              
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><img src="img/ico1.png"><span>Panel</span> </a> </li>
+                                                                 
+                        <li><a href="index.html"><img src="img/ico3.png"> <span>Clientes</span></a></li>
+                        <li><a href="nuevo-cliente.html"><img src="img/ico7.png"><span>Nuevo Cliente</span> </a></li>
+                        
+                    </ul>
+            </nav>
+            </aside>
+            <main>
+                <div class="wrapper_inner">
+                    <h2>Hola  Pam 👋🏼</h2>
+                    <div class="box">
+                        <h3>Todos los clientes</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nombre Cliente</th>
+                                <th>Email</th>
+                                <th>Teléfono</th>
+                                <th>Empresa</th>
+                                <th>Acciones</th>
+
+                            </tr>
+                        </thead>
+                        <tbody id="listado-clientes"></tbody>
+                    </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+
+</html>
